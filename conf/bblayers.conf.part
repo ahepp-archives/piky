@@ -1,0 +1,16 @@
+# POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
+# changes incompatibly
+POKY_BBLAYERS_CONF_VERSION = "1"
+
+BBPATH = "${TOPDIR}"
+BBFILES ?= ""
+
+# Leave the quote open, we're gonna add to the end of this
+BBLAYERS ?= " \
+  /ws/sources/poky/meta \
+  /ws/sources/poky/meta-poky \
+  /ws/sources/poky/meta-yocto-bsp \
+  /ws/sources/meta-openembedded/meta-oe \
+  /ws/sources/meta-openembedded/meta-python \
+  /ws/sources/meta-openembedded/meta-networking \
+  /ws/sources/meta-raspberrypi \
